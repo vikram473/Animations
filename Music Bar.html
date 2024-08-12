@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Bar</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: red;
+            height: 100vh;
+        }
+        .container{
+            width: 400px;
+            height: 400px;
+            border: 1px solid;
+            border-radius: 30px;
+            background-color: black;
+            border-bottom: 2px 2px 30px;
+            position: relative;
+        }
+        p{
+            color: blue;
+            font-size: 30px;
+            position: absolute;
+            left: 140px;
+        }
+        h4{
+            color: white;
+            font-size: 20px;
+            position: absolute;
+            top: 260px;
+            left: 220px;
+        }
+        audio{
+            position: relative;
+            top: 330px;
+            left: 100px;
+            border-radius: 20px;
+        }
+        .a{
+            width: 5px;
+            height: 90px;
+            background:linear-gradient(50deg, rgb(43, 0, 128), rgb(243, 75, 75));
+            margin: 10px;
+            position: absolute;
+            top: 130px;
+            left: 20px;
+            animation: bar 1s infinite linear;
+        }
+        .b{
+            width: 5px;
+            height: 120px;
+            background:linear-gradient(50deg, rgb(43, 0, 128), rgb(243, 75, 75));
+            margin: 10px;
+            position: absolute;
+            top: 120px;
+            left: 40px;
+            animation: bar 11s infinite linear;
+        }
+        .c{
+            width: 5px;
+            height: 120px;
+            background:linear-gradient(50deg, rgb(43, 0, 128), rgb(243, 75, 75));
+            margin: 10px;
+            position: absolute;
+            top: 110px;
+            left: 60px;
+            animation:  bar 10s infinite linear;
+        }
+        .d{
+            width: 5px;
+            height: 130px;
+            background:linear-gradient(50deg, rgb(43, 0, 128), rgb(243, 75, 75));
+            margin: 10px;
+            position: absolute;
+            top: 130px;
+            left: 80px;
+            animation:  bar 9s infinite linear;
+        }
+        .e{
+            width: 5px;
+            height: 100px;
+            background:linear-gradient(50deg, rgb(43, 0, 128), rgb(243, 75, 75));
+            margin: 10px;
+            position: absolute;
+            top: 140px;
+            left: 90px;
+            animation:   bar 8s infinite linear;
+        }
+        .f{
+            width: 5px;
+            height: 150px;
+            background:linear-gradient(50deg, rgb(43, 0, 128), rgb(243, 75, 75));
+            margin: 10px;
+            position: absolute;
+            top: 100px;
+            left: 100px;
+            animation: bar 7s infinite linear;
+        }
+        .g{
+            width: 5px;
+            height: 140px;
+            background:linear-gradient(50deg, rgb(43, 0, 128), rgb(243, 75, 75));
+            margin: 10px;
+            position: absolute;
+            top: 130px;
+            left: 120px;
+            animation: bar 6s infinite linear;
+        }
+        .h{
+            width: 5px;
+            height: 150px;
+            background:linear-gradient(50deg, rgb(43, 0, 128), rgb(243, 75, 75));
+            margin: 10px; 
+            position: absolute;
+            top: 90px;
+            left: 140px;
+            animation: bar 5s infinite linear;
+        }
+        .i{
+            width: 5px;
+            height: 100px;
+            background:linear-gradient(50deg, rgb(43, 0, 128), rgb(243, 75, 75));
+            margin: 10px;
+            position: absolute;
+            top: 130px;
+            left: 160px;
+            animation: bar 4s infinite linear;
+        }
+        .j{
+            width: 5px;
+            height: 160px;
+            background:linear-gradient(50deg, rgb(43, 0, 128), rgb(243, 75, 75));
+            margin: 10px;
+            position: absolute;
+            top: 90px;
+            left: 180px;
+            animation: bar 2s infinite linear;
+        }
+        .k{
+            width: 5px;
+            height: 140px;
+            background:linear-gradient(50deg, rgb(43, 0, 128), rgb(243, 75, 75));
+            margin: 10px;
+            position: absolute;
+            top: 130px;
+            left: 200px;
+            animation: bar 3s infinite linear;
+        }
+        .l{
+            width: 5px;
+            height: 100px;
+            background:linear-gradient(50deg, rgb(43, 0, 128), rgb(243, 75, 75));
+            margin: 10px;
+            position: absolute;
+            top: 130px;
+            left: 220px;
+            animation: bar 2s infinite linear;
+        }
+        @keyframes bar{
+            0%{
+                transform: scale(0);
+            }
+            20%{
+                transform: scale(1);
+            }
+            50%{
+                transform: scale(2);
+            }
+            100%{    
+                transform: scale(0);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="a"></div>
+        <div class="b"></div>
+        <div class="c"></div>
+        <div class="d"></div>
+        <div class="f"></div>
+        <div class="g"></div>
+        <div class="h"></div>
+        <div class="i"></div>
+        <div class="j"></div>
+        <div class="k"></div>
+        <div class="l"></div>
+        <p>Music Bar</p>
+        <h4>Hi NANNA</h4>
+        <audio controls autoplay loop>
+            <source src="../Day-4/Hi Nanna/[iSongs.info] 03 - Gaaju Bomma.mp3">
+        </audio>
+    </div>
+</body>
+</html>
